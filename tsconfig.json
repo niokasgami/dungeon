@@ -7,11 +7,9 @@
         "module": "ESNext",
     
         // Rules for your code
-        "strict": true,
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "noUnusedParameters": true,
-        "noUnusedLocals": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitOverride": true,
 
@@ -21,7 +19,11 @@
         "resolveJsonModule": true,
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
-
+        "paths": {
+            "mini-signals": [
+              "./node_modules/resource-loader/typings/mini-signals.d.ts"
+            ]
+          },
     },
     // Folder for your code
     "include": [
